@@ -1,0 +1,39 @@
+{
+  "name": "my_react",
+  "version": "0.1.0",
+  "private": true,
+  "main": "main.js",
+  "homepage":".",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-start": "electron .",
+    "package": "electron-packager ./ OutApp --win --out ./OutApp --electron-version=6.0.2 --overwrite"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^6.0.2",
+    "electron-packager": "^12.0.0"
+  }
+}
