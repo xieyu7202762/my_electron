@@ -15,7 +15,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron-start": "electron .",
-    "package": "electron-packager ./ OutApp --win --out ./OutApp --electron-version=6.0.2 --overwrite"
+    "package": "electron-packager ./ OutApp --win --out ./OutApp --asar --overwrite --ignore"
   },
   "eslintConfig": {
     "extends": "react-app"
