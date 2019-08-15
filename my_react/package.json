@@ -4,6 +4,15 @@
   "private": true,
   "main": "main.js",
   "homepage":".",
+  "build": {
+    "appId": "123",
+    "mac": {
+      "target": ["dmg","zip"]
+    },
+    "win": {
+      "target": ["nsis","zip"]
+    }
+  },
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -15,7 +24,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron-start": "electron .",
-    "package": "electron-packager ./ OutApp --win --out ./OutApp --asar --overwrite --ignore"
+    "package": "electron-packager ./ OutApp --win --out ./OutApp --asar --overwrite --ignore",
+    "dist": "electron-builder --win --x64"
   },
   "eslintConfig": {
     "extends": "react-app"
